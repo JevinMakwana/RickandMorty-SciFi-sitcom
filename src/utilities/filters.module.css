@@ -1,0 +1,14 @@
+.episode{
+    /* border: 2px solid black; */
+    overflow-y: auto;
+    height: 100px;  
+    width: 150px;
+}
+.location{
+    overflow-y: auto;
+    height: 100px;  
+    width: 300px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0;
+  }
