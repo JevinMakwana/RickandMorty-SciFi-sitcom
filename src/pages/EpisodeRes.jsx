@@ -2,6 +2,6 @@ import React from 'react'
 
 export const EpisodeRes = () => {
   return ( 
-    <div className='page-loader'>Episode page is under dvelopment.</div>
+    <div className='page-loader'>Episode page is under development.</div>
   )
 }
