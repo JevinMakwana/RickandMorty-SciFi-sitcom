@@ -9,7 +9,7 @@ const Results = ({dataToDisplay, isFilterApplied, setDataToDisplay}) => {
   const [pageNo, setpageNo] = useState(2)
   // console.log("dataToDisplay recieved at res.jsx:", dataToDisplay)
   const handleScroll = (event) => {
-    if(!isFilterApplied){
+    if(isFilterApplied === false){
       const elem = event.target
       console.log("Math.floor(elem.scrollHeight-elem.scrollTop)=",Math.floor(elem.scrollHeight-elem.scrollTop), "elem.clientHeight=",elem.clientHeight);
       setisBottom(Math.floor(elem.scrollHeight-elem.scrollTop) === elem.clientHeight || Math.floor(elem.scrollHeight-elem.scrollTop)+1 === elem.clientHeight || Math.floor(elem.scrollHeight-elem.scrollTop)-1 === elem.clientHeight);
@@ -57,10 +57,7 @@ const Results = ({dataToDisplay, isFilterApplied, setDataToDisplay}) => {
     return () => {}
   }, [isBottom])
   
-  // dataToDisplay=dataToDisplay.dataToDisplay
-  // console.log("from Results.jsx, dataToDisplay:", dataToDisplay)
   return (
-    // <div className="overflow-y-auto custom-scrollbar flex w-full scroll-box ml-5">
     <div className="custom-scrollbar content-screen" 
       onScroll={handleScroll}
     >
