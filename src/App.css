@@ -88,8 +88,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 75%;
   gap: 0.5rem;
-  /* height: 40rem; */
-  height: 90vh;
+  height: 110vh;
 }
 /* card */
 .card{
@@ -100,7 +99,6 @@
   font-size: 1.2rem;
   padding-bottom: 2px;
   margin-bottom: 0.5rem;
-  /* background-color: rgba(0, 0, 0, 0.481); */
 }
 .card img{
   width: 100%;
@@ -113,14 +111,11 @@
 .link-to-char{
   text-decoration: none;
   color: inherit; 
-  /* color: rgb(90, 26, 139) */
 }
 
 /* character-page */
 .character-page{
   width: 250px;
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: auto;
   padding: 1.25rem;
   border-width: 1px;
